@@ -199,7 +199,29 @@ margin: 0;
 		text-align: center;
 	}
 	
-	
+	@media (max-width:600px) {
+		
+		#boxes .box1, .box2 {
+			width: 100%;
+			float: none;
+		}
+		
+		#moreaboutme {
+			margin-left: none;
+			margin-right: none;
+		}
+		
+		nav li {
+			float: none;
+		}
+		
+		header h1 {
+			font-size: 27px;
+			text-align: center;
+			
+		}
+	}
+			
 	
 	
 	
