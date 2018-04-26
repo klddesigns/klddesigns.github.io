@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta name="keywords" content="student,developer,web,HTML,CSS,JavaScript"/>
+<meta name="description" content="Student Developer Site"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Kevin Dowty">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<title>Kevin Dowty | Student Developer</title>
+</head>
+
+<body>
+	<!-- Header and Nav -->
+	<header>
+		<div class="container">
+			<div id="logo">
+				<h1>Kevin Dowty <span>Web Design</span></h1>
+			</div>
+		</div>
+	</header>
+	
+	<nav>
+		<div class="container">
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="#moreaboutme">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+		</div>		
+	</nav>
+	
+	<!-- Welcome Section -->
+	<section id="showcase">
+		<div class="container">
+			<h1>Hello and Welcome!</h1>
+			<p>My name is Kevin and I'm an aspiring developer located
+			in central Minnesota. I'm currently a full time student at
+			Western Governers University, earning a Bachelor's Degree
+			in software development.</p>
+		</div>
+	</section>
+	
+	<!-- About Section -->
+	<section>
+		<div id="moreaboutme">
+			<div class="container">
+			<h1>Developer in the Making</h1>
+			<p>With the help of WGU I am learning to become proficient in
+			web design, UI, web applications, object-oriented development,
+			mobile applications, as well as, software engineering. I have 
+			already learned a great deal and I'm looking forward to the progress
+			I will continue to make. I would love to eventually lend my skills
+			to a company that will allow me to prove myself as a hard working,
+			adaptable developer that will continue to grow and learn every
+			day in the ever-changing world of the technical industry.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box1">
+				<img src="img/html.png" alt="Coding a web page"/>
+				<h3>Skills</h3>
+				<p>
+					Familiar with HTML5, CSS3, and JavaScript. I am
+					continuing to learn more about them every day.<br>
+					I create sites from scratch, but am willing to 
+					work with GUI editors.<br>
+					Experience working in a team enviornment, as
+					well as, leading a team.<br>
+					I'm a fast learner, willing to adapt to change and
+					high pressure situations.<br>
+				</p>
+			</div>
+			<div class="box2">
+				<img src="img/quality.png" alt="Certification achievments"/>
+				<h3>Certified</h3>
+				<p>
+					<span>Microsoft Software Development Fundamentals Certification<br>
+					CIW Site Development Associate Certification</span><br>
+					Certifications in web applications and UI design
+					coming up in my current term.<br>
+					Many more certifications will be achieved throughout
+					my Bachelor degree program.<br>
+				</p>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Contact Form -->
+	<section id="contact">
+		<div class="container">
+			<div class="header">
+				<h1>Contact Me</h1>
+			</div>
+			<form action="index.php" method="post">
+				<p>
+					<label>Name</label>
+					<input type="text" name="name">
+				</p>
+				<p>
+					<label>Company</label>
+					<input type="text" name="company">
+				</p>
+				<p>
+					<label>Email Address</label>
+					<input type="email" name="email">
+				</p>			
+				<p class="full">
+					<label>Message</label>
+					<textarea name="message" rows="5"></textarea>
+				</p>
+			
+				<p class="full">
+					<input id="submit" name="submit" type="submit" value="Submit">
+				</p>
+			</form>
+			
+		</div>
+	</section>
+	
+	<!-- Footer -->
+	<footer>
+			<p>Kevin Dowty Designs &copy; 2018</p>
+	</footer>
+
+
+</body>
+
+</html>
